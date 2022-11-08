@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="AppRootTheme" parent="Theme.AppCompat.DayNight" />
+    <style name="AppRootTheme" parent="Theme.MaterialComponents.Light.NoActionBar" />
 
     <!--    配置最基础的控件样式      -->
     <style name="AppBaseTheme" parent="AppRootTheme">
@@ -9,6 +9,7 @@
         <item name="android:buttonStyle">@style/Button.Compat</item>
         <!--AppCompatButton-->
         <item name="buttonStyle">@style/Button.Compat</item>
+<!--        <item name="materialButtonStyle"></item>-->
 
         <item name="android:imageButtonStyle">@style/ImageButton.Compat</item>
         <item name="imageButtonStyle">@style/ImageButton.Compat</item>
@@ -22,17 +23,23 @@
         <item name="autoCompleteTextViewStyle">@style/AutoCompleteTextView.Compat</item>
     </style>
 
+    <!--配置系统提供的全局颜色属性-->
+    <style name="AppColorTheme" parent="AppBaseTheme">
+        <item name="colorPrimary">@color/jelly_color_blue</item>
+        <item name="colorPrimaryDark">@color/jelly_color_blue</item>
+        <!--CheckBox，RadioButton，SwitchCompat等一般控件的选中效果默认采用该颜色-->
+        <item name="colorAccent">@color/jelly_color_blue</item>
+        <!--CheckBox，RadioButton，SwitchCompat等默认状态的颜色-->
+        <item name="colorControlNormal">@color/jelly_color_white</item>
+        <!--应用的主要文字颜色，actionBar的标题文字默认使用该颜色-->
+        <item name="android:textColorPrimary">@color/jelly_color_blue</item>
+        <item name="android:textColorSecondary">@color/jelly_color_blue</item>
+        <item name="android:windowBackground">@color/jelly_color_white</item>
+    </style>
 
+    <!--配置自定义view的属性-->
+    <style name="Jelly" parent="AppColorTheme">
 
-<!--    <style name="AppConfigTheme" parent="AppBaseTheme">-->
-<!--        <item name="colorPrimary">@color/jelly_color_blue</item>-->
-<!--        <item name="colorPrimaryDark">@color/jelly_color_blue</item>-->
-<!--        <item name="colorAccent">?attr/qmui_config_color_blue</item>-->
-<!--        <item name="colorControlNormal">@color/qmui_config_color_white</item>-->
-<!--        <item name="android:textColorPrimary">?attr/qmui_config_color_blue</item>-->
-<!--        <item name="android:textColorSecondary">?attr/qmui_config_color_blue</item>-->
-<!--        <item name="android:windowBackground">?attr/qmui_skin_support_activity_background</item>-->
-<!--        <item name="android:editTextColor">?attr/qmui_config_color_black</item>-->
-<!--    </style>-->
+    </style>
 
 </resources>
