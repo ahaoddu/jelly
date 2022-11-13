@@ -23,6 +23,5 @@ class MainActivity : AppCompatActivity() {
         txtBottom = findViewById(R.id.txt_bottom)
         btnTest = findViewById(R.id.btn_test)
 
-
     }
 }
